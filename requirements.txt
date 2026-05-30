@@ -6,3 +6,4 @@ langgraph
 langchain-community
 langchain-groq
 tavily
+bs4
