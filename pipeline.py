@@ -51,8 +51,10 @@ def run_research_pipeline(topic:str)->dict:
     print("step 4 - Citic is reviewing the report...")
     print("="*50)
 
-    state["feedback"]=critic_chain.invoke({
-        "report":state["report"]
+    trimmed_report = state["report"][:3000]
+
+    state["feedback"] = critic_chain.invoke({
+    "report": trimmed_report
     })
     print("\nCitic Report : \n",state['feedback'])
     return state
