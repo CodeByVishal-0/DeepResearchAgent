@@ -7,3 +7,4 @@ langchain-community
 langchain-groq
 tavily
 bs4
+rich
