@@ -4,3 +4,5 @@ python-multipart
 langchain
 langgraph
 langchain-community
+langchain-groq
+tavily
